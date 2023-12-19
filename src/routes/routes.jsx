@@ -9,15 +9,11 @@ import Cat from "@/pages/cat"
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <div className="grid grid-cols-10 gap-4"><Sidebar /><Login /></div>,
-  },
-  {
     path: "/detail",
     element: <div className="grid grid-cols-10 gap-4"><Cat /></div>,
   },
   {
-    path: "/angel",
+    path: "/",
     element: <div className="grid grid-cols-10 gap-4"><Angel /></div>,
   },
   
