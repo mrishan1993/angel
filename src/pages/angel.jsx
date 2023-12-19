@@ -68,13 +68,13 @@ const Angel = () => {
         let source = ""
         if (text && value ) {
             // api for text and tag
-            source = "https://cataas.com/cat/:" + value + "/says/:" + text + "?json=true"
+            source = "https://cataas.com/cat/" + value + "/says/" + text + "?json=true"
         } else if (text && !value) {
-            source = "https://cataas.com/cat/says/:" + text + "?json=true"
+            source = "https://cataas.com/cat/says/" + text + "?json=true"
             // api for only text
         } else if (!text && value) {
             // api for only tag
-            source = "https://cataas.com/cat/says/:" + value + "?json=true"
+            source = "https://cataas.com/cat/" + value + "?json=true"
         } else {
             // api for none
             source = "https://cataas.com/cat?json=true"
