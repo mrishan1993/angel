@@ -1,0 +1,28 @@
+.animate {
+    animation-duration: 0.75s;
+    animation-duration: 1s; 
+    animation-delay: 0.5s;
+    animation-name: animate-fade;
+    animation-timing-function: cubic-bezier(.26,.53,.74,1.48);
+    animation-fill-mode: backwards;
+  }
+
+
+  .animate.flip {
+    animation-name: animate-flip;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    }
+    @keyframes animate-flip {
+    0% {
+    opacity: 0;
+    transform: rotateX(-120deg) scale(0.9,0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateX(0deg) scale(1,1);
+    }
+    }
+.text-color-white {
+    color: #fff;
+}    
